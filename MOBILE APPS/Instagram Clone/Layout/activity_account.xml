@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="match_parent"
+            android:text="SHUBHAMKUMARSINGH"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textStyle="italic" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/topTV"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/info"/>
+
+    </LinearLayout>
+    <!--ALL THE DISPLAY PART THAT ARE MOVEABLE-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:id="@+id/middle"
+        android:layout_below="@id/top">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="530dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:src="@drawable/accpic1"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:text="EDIT PROFILE"
+                    android:id="@+id/edit"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:src="@drawable/accpic2"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- START OF BOTTOM PART -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/bottom"
+        android:layout_below="@id/middle"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/homeinactive"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:id="@+id/bthome"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/searchinactive"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:id="@+id/btsearch"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/addinactive"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:id="@+id/btmid"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/heartinactive"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:id="@+id/btheart"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/personactive"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:id="@+id/btacc"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
